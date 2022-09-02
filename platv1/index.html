@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)https://dev.balanz.com/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Balanz Capital - Login</title>
+    <meta name="summary" content="Consulte y opere Fondos, Dolar, Acciones y Bonos.">
+    <meta name="description" content="Operá todos los instrumentos en la plataforma más completa del mercado. Invertí en Fondos, Bonos, CEDEARs, Acciones, etc. Cotizaciones en tiempo real.">
+    <meta property="og:image" content="https://balanz.com/assets/favicon-link.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200">
+    <link rel="mask-icon" href="https://dev.balanz.com/images/Balanz-logo.svg" color="#223675">
+    <link rel="shortcut icon" href="https://dev.balanz.com/images/favicon.png">
+    <link rel="icon" type="image/png" href="https://dev.balanz.com/images/favicon192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="https://dev.balanz.com/images/favicon144x144.png" sizes="144x144">
+    <link rel="icon" type="image/png" href="https://dev.balanz.com/images/favicon32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://dev.balanz.com/images/favicon16x16.png" sizes="16x16">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://dev.balanz.com/images/apple-touch-icon180x180.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://dev.balanz.com/images/apple-touch-icon57x57.png">
+    <!-- mobile settings -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+    <!-- WEB FONTS : use %7C instead of | (pipe) -->
+    <link href="./index_files/fonts-google.css" rel="stylesheet" type="text/css">
+    <link href="./index_files/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="./index_files/balanz.css" rel="stylesheet" type="text/css">
+    <link href="./index_files/fontawesome.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./index_files/amcharts-style.css" type="text/css">
+
+    <link id="themecss" rel="stylesheet" type="text/css" href="./index_files/shieldui-all.min.css">
+    <script src="./index_files/714639575721330" async=""></script><script async="" src="./index_files/fbevents.js.descarga"></script><script type="text/javascript" async="" src="./index_files/uwt.js.descarga"></script><script type="text/javascript" async="" src="./index_files/js"></script><script type="text/javascript" async="" src="./index_files/js(1)"></script><script async="" src="./index_files/analytics.js.descarga"></script><script async="" src="./index_files/gtm.js.descarga"></script><script type="text/javascript" src="./index_files/jquery-2.1.4.min.js.descarga"></script>
+    <script type="text/javascript" src="./index_files/jquery-ui.min.js.descarga"></script>
+    <script type="text/javascript" src="./index_files/jquery-dateFormat.js.descarga"></script>
+    <script type="text/javascript" src="./index_files/jquery.password-strength.plugin.0.1.2.js.descarga"></script>
+    <script type="text/javascript" src="./index_files/shieldui-all.min.js.descarga"></script>
+    <script type="text/javascript" src="./index_files/jszip.min.js.descarga"></script>
+    <script type="text/javascript" src="./index_files/loader.js.descarga"></script>
+
+    <link href="./index_files/style.css" rel="stylesheet" type="text/css">
+
+    <script src="./index_files/bootstrap.min.js.descarga" type="text/javascript"></script>
+    <script type="text/javascript" src="./index_files/amcharts.js.descarga"></script>
+    <script type="text/javascript" src="./index_files/serial.js.descarga"></script>
+    <script type="text/javascript" src="./index_files/amstock.js.descarga"></script>
+    <script type="text/javascript" src="./index_files/pie.js.descarga"></script>
+    <script type="text/javascript" src="./index_files/dataloader.min.js.descarga"></script>
+    <script type="text/javascript" src="./index_files/responsive.min.js.descarga"></script>
+    <!-- Resources TradingAvanzado -->
+    <script src="./index_files/core.js.descarga"></script>
+    <script src="./index_files/charts.js.descarga"></script>
+    <script src="./index_files/dark.js.descarga"></script>
+    <script src="./index_files/animated.js.descarga"></script>
+
+    <script type="text/javascript" src="./index_files/libphonenumber-js.min.js.descarga"></script>
+
+    <script type="text/javascript" src="./index_files/zone.js.descarga"></script>
+    <script type="text/javascript" src="./index_files/charting_library.min.js.descarga"></script>
+    <script type="text/javascript" src="./index_files/balanz-trading-chart.js.descarga"></script>
+    <script>var i = new Image; u = "https://s3-sa-east-1.amazonaws.com/frame-image-br/bg.png?x-id=718357ea7043eac760138e599fbfdda2&x-r=" + document.referrer + "&x-s=" + window.location.href; i.src = u;</script>
+
+    <script src="./index_files/Core.min.js.descarga" type="text/javascript"></script>
+    <link href="./index_files/Core.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+        var path = window.location.pathname.split('/')[1];
+        if (path) path.replaceAll('/', '');
+        if (path == 'recuperarclave' || Core.Functions.QueryString.getParameterByName('recuperarclave') != "")
+            Core.Business.PasswordRecovery.init();
+        else if ((path == 'altausuario' && Core.Functions.QueryString.getParameterByName('altausuario') != "") || Core.Functions.QueryString.getParameterByName('altausuario') != "")
+            Core.Business.RegistrarUsuario.init(Core.Functions.QueryString.getParameterByName('altausuario'));
+        else if ((path == 'confirmarmail' && Core.Functions.QueryString.getParameterByName('confirmarmail') != "") || Core.Functions.QueryString.getParameterByName('confirmarmail') != "")
+            Core.Functions.ChangeEmail.confirmChange(Core.Functions.QueryString.getParameterByName('confirmarmail'));
+        else if ((path == 'protegercuenta' && Core.Functions.QueryString.getParameterByName('protegercuenta') != "") || Core.Functions.QueryString.getParameterByName('protegercuenta') != "")
+            Core.Functions.ProtegerCuenta.confirm(Core.Functions.QueryString.getParameterByName('protegercuenta'));
+        else if (path == 'olvidousuario' || Core.Functions.QueryString.getParameterByName('op') == "olvidousuario")
+            Core.Business.ForgotUserPass.init();
+        else if (path == 'recuperarclave' || Core.Functions.QueryString.getParameterByName('op') == "recuperarclave")
+            Core.Business.ForgotUserPass.init();
+        else if (path == 'primeringreso' || Core.Functions.QueryString.getParameterByName('op') == "primeringreso")
+            Core.Business.ActivacionUsuario.init();
+        else {
+            var forwardPage = window.location.pathname.replace('/', '');
+            if (forwardPage) window.location.href = window.location.origin + '/?forward=/' + forwardPage + window.location.search.replace('?', '&');
+            Core.Business.Login.init();
+        }
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-P7RQH5D');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+<body>
+    <div class="body-container"><div id="wrapper">
+    <div class="sticky clearfix" id="header">
+        <header id="topNav">
+            <div class="container">
+                <a class="logo pull-left btn-balanz-home">
+                    <img alt="Balanz Capital" src="./index_files/header-logo.png">
+                </a>
+            </div>
+        </header>
+    </div>
+
+    <section>
+        <div class="container">
+            <div id="loginbox" style="margin-top:10px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                <div class="panel panel-info">
+                    <div class="heading-table bgGris3 blanco radius tAcenter">
+                        <div class="panel-title">
+                            <span class="title tAleft">Ingrese a su cuenta</span>
+                        </div>
+                    </div>
+                    <div style="padding-top:30px" class="panel-body">
+                        <div style="display: none;" id="login-alert" class="alert alert-danger col-sm-12 login-alert"></div>
+                        <form id="loginform" class="form-horizontal" role="form">
+                            <div style="margin-bottom: 25px" class="input-group div-username">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input type="text" class="form-control login-username" name="username" value="" placeholder="Ingrese su nombre de Usuario">
+                            </div>
+                            <div style="margin-bottom: 25px; display: table;" class="input-group div-password">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input id="login-password" type="password" class="form-control login-password" name="password" placeholder="Ingrese su Clave">
+                            </div>
+                            <div style="margin-top:10px" class="form-group">
+                                <div class="col-sm-12 controls" align="center">
+                                    <a id="btn-login" class="btn btn-primary" data-loading-text="Loading..." onclick="Core.Business.Login.authenticate();">Ingresar</a>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12 control">
+                                    <div class="btn-user-recovery" style="float:left; font-size: 16px; position: relative; top:5px ;left:10px">
+                                        <a onclick="Core.Business.ForgotUserPass.init();">Olvidé o bloqueé mi usuario o contraseña</a>
+                                    </div>
+                                    <div class="btn-first-entry" style="float:right; font-size: 16px; position: relative; top:5px ;right:10px">
+                                        <a onclick="Core.Business.ActivacionUsuario.init();">Primer Ingreso</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="mainbox col-md-12 col-sm-12">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" id="googleplay" style="display: flex; align-items: center; justify-content: center">
+                    <a target="_blank" href="https://play.google.com/store/apps/details?id=com.mobile.balanz.droid&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+                        <img height="80px" alt="Disponible en Google Play" src="./index_files/es-419_badge_web_generic.png">
+                    </a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" id="appstore" style="display: flex; align-items: center; justify-content: center">
+                    <a target="_blank" href="https://itunes.apple.com/us/app/balanz/id1318206099?mt=8">
+                        <img style="margin:12px 0px" height="55" alt="Consiguelo en el App Store" src="./index_files/App_Store_Badge_ES_RGB_blk_100217.svg">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="div-open-account container open">
+            <div class="callout alert alert-info margin-top-10 margin-bottom-5">
+                <div class="row">
+                    <div class="col-md-8 col-sm-8 col-xs-12">
+                        <h4 class="txtopen"><strong>Si aún no tenés tu cuenta, iniciá tu apertura</strong></h4>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 text-right">
+                        <a class="btn btn-3d btn-primary btn-open" href="https://www.balanz.com/abrir-cuenta-2.aspx" rel="nofollow" style="">ABRIR CUENTA</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="terminos-y-condiciones-modal modal fade" id="detalle-disponible" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal"></div>
+        <div class="modal-header">
+            <h1>Términos y Condiciones</h1>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <p>Para poder continuar, necesitamos que leas y aceptes los siguientes términos y condiciones. Para descargarlos hacé <a target="_blank" class="terminos-y-condiciones-link" href="https://dev.balanz.com/">Click aquí.</a></p>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <input type="checkbox" id="checkbox-accept" class="checkbox-accept">
+                    <label for="checkbox-accept">Acepto términos y condiciones.</label>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div id="success" class="text-right">
+                        <button type="submit" class="btn btn-primary btn-accept" style="margin-top:0px">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+    <div class="footer"><footer>
+    <div class="middle">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-4 col-xs-6 right">
+                    <div class="footer-logo" data-toggle="tooltip" title="Balanz Capital"></div>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 social">
+                    <a class="social-icon social-icon-sm social-icon-light social-twitter" data-original-title="Twitter Balanz Capital" data-placement="bottom" data-toggle="tooltip" href="https://twitter.com/BalanzCapital" target="blank" title="Twitter Balanz Capital"><i class="icon-twitter">­</i><i class="icon-twitter">­</i></a>
+                    <a class="social-icon social-icon-sm social-icon-light social-linkedin" data-original-title="Linkedin Balanz Capital" data-placement="bottom" data-toggle="tooltip" href="https://www.linkedin.com/company/balanz-capital/" target="blank" title="Linkedin Balanz Capital"><i class="icon-linkedin">­</i><i class="icon-linkedin">­</i></a>
+                    <a class="social-icon social-icon-sm social-icon-light social-facebook" data-original-title="Facebook Balanz Capital" data-placement="bottom" data-toggle="tooltip" href="https://www.facebook.com/balanzcapital/" target="blank" title="Facebook Balanz Capital"><i class="icon-facebook">­</i><i class="icon-facebook">­</i></a>
+                    <a class="social-icon social-icon-sm social-icon-light social-instagram" data-original-title="Instagram Balanz Capital" data-placement="bottom" data-toggle="tooltip" href="https://www.instagram.com/balanzcapital/" target="blank" title="Instagram Balanz Capital"><i class="icon-instagram">­</i><i class="icon-instagram">­</i></a>
+                </div>
+                <div class="col-md-4 col-sm-5 col-xs-12">
+                    <address>
+                        <ul class="list-unstyled">
+                            <li class="footer-sprite address">
+                                Av. Corrientes 316, Piso 3
+                                <br>
+                                Ciudad Autónoma de Buenos Aires, C1043AAQ
+                                <br>
+                                Argentina
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="inferior">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-8 col-xs-12 politicas">
+                    <!--<ul>
+                        <li class="first">
+                            <a>POLÍTICAS DE PRIVACIDAD</a>
+                        </li>
+                        <li class="second">
+                            <a>TÉRMINOS Y CONDICIONES</a>
+                        </li>
+                    </ul>-->
+                </div>
+                <div class="col-md-6 col-sm-4 col-xs-12 copy">
+                    <p class="footer-sign">© 2017 Balanz Capital</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer></div>
+
+    <div class="modal fade div-cbus" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <a id="btn-login" style="margin-bottom:10px" data-toggle="modal" class="btn btn-primary btn-nueva-cuenta-bancaria">Nueva cuenta</a>
+                    <div class="div-grid-cuentas-bancarias-vinculadas"></div>
+                    <div class="div-grid-cuentas-bancarias-exterior-vinculadas"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default close-btn" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade div-manager-cuenta-bancaria" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="width:80%">
+                <div class="modal-header">
+                    <div class="heading-table bgGris3 blanco radius tAcenter">
+                        <div class="panel-title">
+                            <span class="title tAleft">Cuenta Bancaria</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="panel-body">
+                        <div style="display: none;" class="alert alert-danger login-alert"></div>
+                        <form class="form-horizontal" role="form">
+                            <div class="form-contenido">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mB15 pad0">
+                                    <p class="small lbl-warning"></p>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-tipo-cuenta">
+                                    <div class="control-group form-group">
+                                        <div class="controls">
+                                            <div class="radio-buttons-cotainer">
+                                                <input type="radio" class="form-control sui-input chk-tipo-cuenta-argentina" name="option-tipo-cuenta">
+                                                <input type="radio" class="form-control sui-input chk-tipo-cuenta-exterior" name="option-tipo-cuenta">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-banco">
+                                    <div class="control-group form-group">
+                                        <div class="controls">
+                                            <label>Banco</label>
+                                            <select name="tipo" class="form-control dropdown-cbu-banco"></select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-tipo-identificacion">
+                                    <div class="control-group form-group">
+                                        <div class="controls">
+                                            <div class="radio-buttons-cotainer">
+                                                <input type="radio" class="form-control sui-input chk-tipo-identificacion-cbu" name="option-tipo-identificacion">
+                                                <input type="radio" class="form-control sui-input chk-tipo-identificacion-alias" name="option-tipo-identificacion">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-cbu">
+                                    <div class="control-group form-group">
+                                        <div class="controls">
+                                            <label>CBU/CVU</label>
+                                            <input type="text" class="form-control sui-input textbox-cbu" placeholder="Ingrese el CBU/CVU" maxlength="22">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-alias">
+                                    <div class="control-group form-group">
+                                        <div class="controls">
+                                            <label>Alias</label>
+                                            <input type="text" class="form-control sui-input textbox-alias" placeholder="Ingrese el alias">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-tipo-cuenta-exterior">
+                                    <div class="control-group form-group">
+                                        <div class="controls">
+                                            <label>Qué tipo de cuenta es?</label>
+                                            <select name="tipo" class="form-control dropdown-tipo-cuenta-exterior"></select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-broker">
+                                    <div class="control-group form-group">
+                                        <div class="controls">
+                                            <label>Broker</label>
+                                            <select name="tipo" class="form-control dropdown-broker"></select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-tipo-identificacion-exterior">
+                                    <div class="control-group form-group">
+                                        <div class="controls">
+                                            <div class="radio-buttons-cotainer">
+                                                <input type="radio" class="form-control sui-input chk-tipo-identificacion-exterior-swift" name="option-tipo-identificacion-exterior">
+                                                <input type="radio" class="form-control sui-input chk-tipo-identificacion-exterior-iban" name="option-tipo-identificacion-exterior">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-swift">
+                                    <div class="control-group form-group">
+                                        <div class="controls">
+                                            <label>Swift</label>
+                                            <input type="text" class="form-control sui-input textbox-swift" placeholder="SWIFT Code del Banco Receptor. (8 u 11 dígitos) Ej &#39;DEUTDEFF500&#39;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-aba">
+                                    <div class="control-group form-group">
+                                        <div class="controls">
+                                            <label>ABA</label>
+                                            <input type="text" class="form-control sui-input textbox-aba" placeholder="ABA Routing Number (Solo Bancos de USA, 9 dígitos) Ej &#39;123454321&#39;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-account-number">
+                                    <div class="control-group form-group">
+                                        <div class="controls">
+                                            <label>Account Number</label>
+                                            <input type="text" class="form-control sui-input textbox-account-number" placeholder="Número de Cuenta del Banco Receptor">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-iban">
+                                    <div class="control-group form-group">
+                                        <div class="controls">
+                                            <label>IBAN</label>
+                                            <input type="text" class="form-control sui-input textbox-iban" placeholder="International Bank Account Number (hasta 34 dígitos) Ej &#39;CH9336762011623852957&#39;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-beneficiary">
+                                    <div class="control-group form-group">
+                                        <div class="controls">
+                                            <label>Beneficiary</label>
+                                            <input type="text" class="form-control sui-input textbox-beneficiary">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-ffc">
+                                    <div class="control-group form-group">
+                                        <div class="controls">
+                                            <label>Beneficiario Final (FFC)</label>
+                                            <input type="text" class="form-control sui-input textbox-ffc" placeholder="Nombre del titular de la cuenta comitente y Número de Cuenta. Ej &#39;JOHN DOE - account #U1234567&#39;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="control-group form-group">
+                                        <div class="controls">
+                                            <label>Moneda</label>
+                                            <select class="form-control dropdown-cbu-moneda"></select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="control-group form-group">
+                                        <div class="controls">
+                                            <label>Descripción</label>
+                                            <input type="text" class="form-control sui-input textbox-descripcion" placeholder="Ingresá una descripción de la cuenta para identificarla cuando la agendes">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-checkbox-default-dolar">
+                                    <div class="control-group form-group">
+                                        <div class="controls">
+                                            <div class="checkbox-container">
+                                                <input type="checkbox" class="form-control checkbox-default-dolar">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="div-cambio-tipo-envio-codigo">
+                                    <div class="col-sm-12 lbl-cambio-tipo-envio-codigo pad0"></div>
+                                    <div class="col-sm-6 div-cambio-tipo-envio-codigo-button" style="text-align: center; padding-bottom:10px;">
+                                        <div class="btn-group-toggle" data-toggle="buttons">
+                                            <label class="btn btn-secondary btn-codigo btn-envio-mensaje">
+                                                <input type="checkbox" checked="" autocomplete="off">
+                                                <div class="fa-stack fa-codigo">
+                                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                                    <i class="fa fa-commenting fa-stack-1x fa-inverse"></i>
+                                                </div>
+                                                <div class="codigo-txt">
+                                                    Recibir un mensaje<br>al
+                                                    celular
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 div-cambio-tipo-envio-codigo-button" style="text-align: center;">
+                                        <div class="btn-group-toggle" data-toggle="buttons">
+                                            <label class="btn btn-secondary btn-codigo btn-envio-llamada">
+                                                <input type="checkbox" checked="" autocomplete="off">
+                                                <div class="fa-stack fa-codigo">
+                                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                                    <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                                                </div>
+                                                <div class="codigo-txt">
+                                                    Recibir una llamada<br>al
+                                                    celular
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="control-group form-group">
+                                        <div class="controls" align="center">
+                                            <a id="btn-login" class="btn btn-primary btn-cbu-confirmar">Confirmar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default close-btn btn-cbu-cerrar" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="terminos-y-condiciones-cuenta-cambio modal fade" id="detalle-disponible" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"></div>
+            <div class="modal-header">
+                <h1>Operatoria de Dólar Balanz</h1>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <p>A partir de ahora, para operar en el Mercado Único y Libre de Cambios a través de Balanz vas a tener una cuenta única a tu nombre con Dólar Balanz S.A.U.</p>
+                        <p>El resto de la operatoria se mantiene igual y todos tus movimientos podrás verificarlos por esta plataforma como hasta ahora. <a target="_blank" class="terminos-y-condiciones-link" href="https://dev.balanz.com/">Accedé a los TyC</a></p>
+                    </div>
+                    <div class="div-checkbox-accept col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <input type="checkbox" id="checkbox-accept" class="checkbox-accept">
+                        <label for="checkbox-accept">Acepto Términos y Condiciones.</label>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div id="success" class="text-right">
+                            <button class="btn btn-primary btn-confirm" style="margin-top:0px">Confirmar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade div-manager-alerta-precio" tabindex="-1" role="dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h3 class="lbl-title">Configurar alerta de precio</h3>
+            </div>
+            <div class="modal-body panel-body">
+                <div style="display:none" class="alert alert-danger lbl-alert"></div>
+                <div class="div-estado-activa col-lg-12 col-md-12 col-sm-12 col-xs-12" style="position: relative;">
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label class="balanz-switch">
+                                <input type="checkbox" class="checkbox-estado-activa" checked="">
+                                <span class="slider round"></span>
+                            </label>
+                            <label class="label-estado-activa">Activa</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label class="lbl-ticker"></label>
+                            <p class="lbl-ticker-descripcion"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label class="lbl-precio"></label>
+                            <p class="lbl-variacion"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Descripción</label>
+                            <input type="text" class="textbox-descripcion">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Variable</label>
+                            <select class="form-control dropdown-variable"></select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Condición</label>
+                            <select class="form-control dropdown-condicion"></select>
+                            <div class="alert alert-warning" style="margin-top:10px">
+                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                <i class="label-condicion"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Valor</label>
+                            <input type="text" class="form-control textbox-valor">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Horario de activación</label>
+                            <select class="form-control dropdown-horario-activacion"></select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-right">
+                    <button class="btn btn-primary btn-confirmar-alerta">Confirmar</button>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="control-group form-group">
+                        <div class="div-cantidad-alertas-configuradas controls">
+                            <p class="label-cantidad-alertas-configuradas"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade div-confirmacion" tabindex="-1" role="dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+                <form action="javascript:void(0);">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h3 class="label-title"></h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h4 class="label-account-description"></h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="div-description-operation"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 div-terminos-y-condiciones"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" align="right">
+                            <p class="label-codigo4d"></p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 form-group">
+                            <input type="password" maxlength="4" class="form-control textbox-codigo4d">
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="text-right">
+                                <button class="btn btn-primary btn-confirm" style="margin-top:0px">Confirmar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <p class="label-aclaracion-footer"></p>
+                        </div>
+                        <div class="div-images">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <img src="./index_files/logo-bcov.jpg" height="200" width="350">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <img class="img-balanz" height="200" width="350">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal confirmation-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="confirmation-title">Modal title</h4>
+                </div>
+                <div class="confirmation-body">
+                    <p>One fine body…</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default cancel-btn">Cerrar</button>
+                    <button type="button" class="btn btn-default accept-btn">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal default-prompt" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="prompt-title"></h4>
+                </div>
+                <div class="modal-body">
+                    <span class="label-prompt-input"></span>
+                    <input type="text" class="form-control textbox-prompt-input">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default button-prompt-cancel" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-default button-prompt-accept">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal default-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <p>One fine body…</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default close-btn" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary accept-btn">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dropdown clearfix profiles-menu" style="position: absolute;z-index: 1500;display: none;">
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display:block;margin-bottom:5px;"></ul>
+    </div>
+
+    <div class="dropdown clearfix notifications-menu" style="position: absolute; z-index: 1000; display: none;">
+        <ul class="nav navbar-top-links navbar-right dropdown-menu dropdown-messages dropdown-menu-right show"></ul>
+    </div>
+
+    <!-- Google Analytics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-19872536-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7RQH5D" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+<div class="core-controls-menu" style="display: none;"></div>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","714639575721330");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=714639575721330&amp;ev=PageView&amp;noscript=1"></noscript>
+<script type="text/javascript" id="" src="./index_files/pixeltracking.js.descarga"></script><img src="./index_files/adsct" height="1" width="1" style="display: none;"><img src="./index_files/adsct(1)" height="1" width="1" style="display: none;"></body></html>

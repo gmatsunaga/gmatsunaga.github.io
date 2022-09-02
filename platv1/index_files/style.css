@@ -1,0 +1,316 @@
+.blzGrid-column-header-odd {
+    border: 0 !important;
+    background: #254C80 !important;
+    color: #fff !important;
+    font-weight: 400 !important;
+    height: 30px;
+    padding: 2px 5px !important;
+    font-size: 12px !important;
+    line-height: 1.2;
+    text-align: center !important;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.blzGridDolar-column-header-odd {
+    border: 0 !important;
+    background: rgb(77, 123, 68) !important;
+    color: #fff !important;
+    font-weight: 400 !important;
+    height: 30px;
+    padding: 2px 5px !important;
+    font-size: 12px !important;
+    line-height: 1.2;
+    text-align: center !important;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.blzGrid-column-header-even {
+    border: 0 !important;
+    background: #a5a59f !important;
+    color: #fff !important;
+    font-weight: 400 !important;
+    height: 30px;
+    padding: 2px 5px !important;
+    font-size: 12px !important;
+    line-height: 1.2;
+    text-align: center !important;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.blzGridDolar-column-header-even {
+    border: 0 !important;
+    background: #a5a59f !important;
+    color: #fff !important;
+    font-weight: 400 !important;
+    height: 30px;
+    padding: 2px 5px !important;
+    font-size: 12px !important;
+    line-height: 1.2;
+    text-align: center !important;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.sui-grid-core {
+    border: 0;
+}
+
+    .sui-grid-core .sui-table {
+        margin-bottom: 0;
+    }
+
+.sui-grid .sui-gridheader {
+    border: 0;
+}
+
+.sui-grid .sui-alt-row, .sui-grid .sui-grid-footer {
+    background-color: #e8f7ff;
+}
+
+.sui-grid-core .sui-cell {
+    font-size: 12px;
+    color: #2d2d2d !important;
+    /* height: 40px; */
+    /* height: auto; */
+    /* line-height: 1.4; */
+    /* display: block; */
+    /* width: 100%; */
+    padding: 4px 0;
+    /* display: flex; */
+    justify-content: center;
+    /* flex-direction: column; */
+    border: 0;
+    line-height: 25px;
+    /* padding: 0 5px; */
+    text-align: center;
+}
+
+    .sui-grid-core .sui-cell .green {
+        color: green !important;
+    }
+
+    .sui-grid-core .sui-cell .red {
+        color: red !important;
+    }
+
+.sui-grid .sui-headercell a {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.sui-grid-core .sui-indent-col {
+    width: 0.001em;
+}
+
+.div-grid-cotizacion .sui-indent-col {
+    width: 15px;
+}
+
+.div-operaciones-usd .sui-indent-col {
+    width: 15px;
+}
+
+.div-operaciones-mercado .sui-indent-col {
+    width: 15px;
+}
+
+.div-importador-cuentas .sui-indent-col {
+    width: 15px;
+}
+
+.div-condominios-comitente .sui-indent-col {
+    width: 15px;
+}
+
+.div-condominios-cuotapartista .sui-indent-col {
+    width: 15px;
+}
+
+.div-importador-esco-cuentas .sui-indent-col {
+    width: 15px;
+}
+
+.div-grid-cotizacion .sui-detail-row .sui-gridheader {
+    display: none;
+}
+
+.sui-button {
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+}
+
+.sui-grid-core .sui-cell .sui-button {
+    margin: 0;
+}
+
+.sui-button:hover {
+    color: #6d6d6d;
+    background-color: transparent;
+}
+
+span.sui-collapse, span.sui-expand {
+    display: inline;
+}
+
+span.sui-group-header-text {
+    display: inline !important;
+}
+
+span.sui-combobox, span.sui-datepicker, span.sui-dropdown, span.sui-numeric-textbox {
+    width: 100%;
+}
+
+.gridText {
+    line-height: inherit !important;
+}
+
+.sui-grid .sui-group-header {
+    background-color: #dcdbde;
+}
+
+.box-fecha {
+    padding: 4px;
+}
+
+p.font-bold {
+    font-weight: bold;
+}
+
+.evolucion-date-button {
+    box-sizing: border-box;
+    display: inline;
+    line-height: 22px;
+    padding: 1px 4px;
+}
+
+.div-cotizacion-indice label, h4 {
+    margin-top: 5px;
+}
+
+.div-cotizacion-indice input {
+    margin-top: 3px;
+}
+
+.div-cotizacion-indice .green {
+    color: green !important;
+}
+
+.div-cotizacion-indice .red {
+    color: red !important;
+}
+
+.div-total-paridad .red {
+    color: red !important;
+}
+
+.div-totales-usd .red {
+    color: red !important;
+}
+
+.div-indices-ultimo-mes .red {
+    color: red !important;
+}
+
+.sui-checkbox-element {
+    margin-bottom: 5px;
+}
+
+.has-error .sui-input {
+    border-color: #a94442 !important;
+}
+
+.has-error .sui-dropdown {
+    border-color: #a94442 !important;
+}
+
+.modal-dialog {
+    width: auto !important;
+}
+
+.div-manager-alerta-precio .div-cantidad-alertas-configuradas {
+    text-align: right;
+    position: relative;
+    top: 12px;
+}
+
+.div-manager-alerta-precio .label-cantidad-alertas-configuradas {
+    font-style: italic;
+    display: block;
+    color: #0c0d5c !important;
+}
+
+.div-manager-alerta-precio .label-estado-activa {
+    position: relative;
+    top: 6px;
+    left: 6px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.balanz-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+    .balanz-switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .balanz-switch .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+        .balanz-switch .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+    .balanz-switch input:checked + .slider {
+        background-color: #0c0c5c;
+    }
+
+        .balanz-switch input:checked + .slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+    .balanz-switch input:focus + .slider {
+        box-shadow: 0 0 1px #0c0c5c;
+    }
+
+    .balanz-switch .slider.round {
+        border-radius: 34px;
+    }
+
+        .balanz-switch .slider.round:before {
+            border-radius: 50%;
+        }
