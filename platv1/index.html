@@ -79,7 +79,7 @@
             Core.Business.ActivacionUsuario.init();
         else {
             var forwardPage = window.location.pathname.replace('/', '');
-            if (forwardPage) window.location.href = window.location.origin + 'platv1/?forward=/' + forwardPage + window.location.search.replace('?', '&');
+            if (forwardPage) window.location.href = window.location.origin + '/platv1/?forward=/' + forwardPage + window.location.search.replace('?', '&');
             Core.Business.Login.init();
         }
     </script>
